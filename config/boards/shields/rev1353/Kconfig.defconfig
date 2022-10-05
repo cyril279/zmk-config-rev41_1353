@@ -1,5 +1,9 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_41_1353
-    def_bool $(shields_list_contains,41_1353)
+if SHIELD_REV1353
+
+config ZMK_KEYBOARD_NAME
+    default "rev1353"
+
+endif
